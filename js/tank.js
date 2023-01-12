@@ -65,8 +65,8 @@ const draw = () => {
   }
 };
 const drawGausing = () => {
-  ctx.beginPath();
-  ctx.arc( // 게이지가 그려지는것을 보여준다
+  ctx.beginPath(); //선을그리겠다고 선언
+  ctx.arc( // 게이지가 그려지는것을 보여준다 arc=원 
     tankCenterX,
     tankCenterY - cannonLength,
     gaugeBarRadius,
@@ -97,7 +97,7 @@ const drawTank = () => {
   ctx.lineWidth = 1; // 선의 두께
   ctx.lineCap = "round";
   ctx.beginPath();
-  ctx.moveTo(tankX, height - tankHeight); //펜의 동선표기
+  ctx.moveTo(tankX, height - tankHeight); //펜의 동선 시작점
   ctx.lineTo(tankX + tankWidth, height - tankHeight); //선그릴때 직선 표기
   ctx.lineTo(tankX + tankWidth, height);
   ctx.lineTo(tankX, height);
@@ -108,7 +108,7 @@ const drawTank = () => {
     tankCenterY - cannonLength * Math.sin(cannonAngle)
   );
   ctx.stroke();
-  ctx.closePath();
+  ctx.closePath(); //선을 그만 그린다고 선언
 };
 const drawTarget = () => {
   ctx.fillRect(targetX, targetY, targetWidth, targetHeight);
