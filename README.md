@@ -1,6 +1,6 @@
 # mini-tank
 
-javascript로 만든 미니 게임입니다. 
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />로 만든 미니 게임입니다. 
 
 html 의 canvas 태그에 관해 공부하였고 이를 활용하여 만들어 봤습니다. 
 
